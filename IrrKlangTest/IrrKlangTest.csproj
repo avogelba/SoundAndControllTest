@@ -107,14 +107,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="ikpFlac.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-    <None Include="ikpMP3.dll">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-  <ItemGroup>
     <ProjectReference Include="..\WPFVolumeControl\WPFVolumeControl.csproj">
       <Project>{2F5C7398-EDDA-4847-8B6A-A55C28DC0C77}</Project>
       <Name>WPFVolumeControl</Name>
@@ -123,6 +115,16 @@
       <Project>{68EBFFDD-2953-4E55-8169-5172F7121A3B}</Project>
       <Name>WpfVolumeSlider</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Libraries\irrKlang-64bit-1.6.0\bin\dotnet-4-64\ikpFlac.dll">
+      <Link>ikpFlac.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Include="..\Libraries\irrKlang-64bit-1.6.0\bin\dotnet-4-64\ikpMP3.dll">
+      <Link>ikpMP3.dll</Link>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
