@@ -754,4 +754,4 @@
     ├── VolumeSlider.xaml.cs
     └── WpfVolumeSlider.csproj
 
-```bash
+```
