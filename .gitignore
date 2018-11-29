@@ -3,6 +3,13 @@
 ##
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 
+#project specific files
+ikpFlac.dll
+ikpMP3.dll
+irrKlang.NET4.dll
+**/[Pp]ackages/*
+**/[Ll]ibraries/*
+
 # User-specific files
 *.suo
 *.user
